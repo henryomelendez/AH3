@@ -3,23 +3,25 @@ public class FizzBuzz {
     public static void main(String[] args) {
         int n = 30;
         recursiveFizzBuzz(n);
+        System.out.println();
+        fizzBuzz(n);
     }
 
     public static void fizzBuzz(int n){
         for(int i = 1; i <= n ; i++){
             if(i % 15 == 0){
-                System.out.println("Fizz Buzz");
+                System.out.print(" FizzBuzz ");
             }
             else if(i % 3 == 0){
-                System.out.println("Fizz");
+                System.out.print(" Fizz ");
             }
             else if(i % 5 == 0){
-                System.out.println("Buzz");
+                System.out.print(" Buzz ");
             }
 
 
             else {
-                System.out.println(i);
+                System.out.print(" "+ i + " ");
             }
         }
     }
@@ -29,15 +31,15 @@ public class FizzBuzz {
             recursiveFizzBuzz(n -1);
         }
         if(n % 15 == 0){
-            System.out.println("Fizz Buzz");
+            System.out.print("FizzBuzz ");
         }
         else if(n % 5 == 0){
-            System.out.println("Buzz");
+            System.out.print(" Buzz ");
         } else if (n % 3 == 0) {
-            System.out.println("Fizz");
+            System.out.print(" Fizz ");
         }
         else {
-            System.out.println(n);
+            System.out.print(" " +n + " ");
         }
     }
 
