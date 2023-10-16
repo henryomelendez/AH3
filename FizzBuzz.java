@@ -24,5 +24,22 @@ public class FizzBuzz {
         }
     }
 
+    public static void recursiveFizzBuzz(int n){
+        if(n > 1){
+            recursiveFizzBuzz(n -1);
+        }
+        if(n % 15 == 0){
+            System.out.println("Fizz Buzz");
+        }
+        else if(n % 5 == 0){
+            System.out.println("Buzz");
+        } else if (n % 3 == 0) {
+            System.out.println("Fizz");
+        }
+        else {
+            System.out.println(n);
+        }
+    }
+
 }
 
